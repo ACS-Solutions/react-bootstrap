@@ -13,12 +13,6 @@ var MenuItem = React.createClass({
     onSelect: React.PropTypes.func
   },
 
-  getDefaultProps: function () {
-    return {
-      href: '#'
-    };
-  },
-
   handleClick: function (e) {
     if (this.props.onSelect) {
       e.preventDefault();
