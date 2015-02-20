@@ -6,6 +6,7 @@ var classSet = require('./utils/classSet');
 var MenuItem = React.createClass({
   propTypes: {
     header:   React.PropTypes.bool,
+    disabled: React.PropTypes.bool,
     divider:  React.PropTypes.bool,
     href:     React.PropTypes.string,
     title:    React.PropTypes.string,
@@ -36,6 +37,7 @@ var MenuItem = React.createClass({
   render: function () {
     var classes = {
         'dropdown-header': this.props.header,
+        'disabled': this.props.disabled,
         'divider': this.props.divider
       };
 
