@@ -12,8 +12,14 @@ var ListGroup = React.createClass({
   },
 
   render: function () {
+	classObj = {
+		'list-group': true
+	};
+	classObj[this.props.className] = true;
+	classes = classSet(classObj);
+
     return (
-      <div className="list-group">
+      <div className={classes}>
         {ValidComponentChildren.map(this.props.children, this.renderListItem)}
       </div>
     );
