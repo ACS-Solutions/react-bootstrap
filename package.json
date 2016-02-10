@@ -17,6 +17,7 @@
     "react": ">=0.9"
   },
   "devDependencies": {
+    "browserify": "^3.46.1",
     "envify": "~1.2.1",
     "grunt": "~0.4.2",
     "grunt-amd-wrap": "^1.0.1",
